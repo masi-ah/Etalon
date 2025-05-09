@@ -4,15 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="hero">
+    <div class="hero">
+      <div class="container">
         <div class="hero-top">
-          <p class="hero-year">2022</p>
-          <h2>Autumn Jackets</h2>
-          <p class="hero-subtitle">Autumn Sale / Up to 50% OFF</p>
+          <div class="desktop-header">
+            <p class="desktop-title">Etalon</p>
+            <div class="menu-desktop">
+              <ul>
+                <li>Home</li>
+                <li>Store</li>
+                <li>New</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <img class="shopping-img" src="./assets/img/shop-desktop.svg" alt="shopping">
+          </div>
+          <div>
+            <p class="hero-year">2022</p>
+            <h2>Autumn Jackets</h2>
+            <p class="hero-subtitle">Autumn Sale / Up to 50% OFF</p>
+          </div>
+          <a class="hero-button" href="#">Open Collection</a>
         </div>
         <div class="pic-collection">
           <input type="radio" name="switch" id="item1" checked>
@@ -21,7 +36,7 @@
           <div class="circle1"></div>
           <div class="circle2"></div>
           <div class="images">
-            <img class="img-autumn" src="./assets/img/green-coat.png" alt="coat">
+            <img class="img-autumn" src="./assets/img/coat-desktop.png" alt="coat">
             <img class="img-autumn" src="./assets/img/shirt.png" alt="shirt">
             <img class="img-autumn" src="./assets/img/shirt1.png" alt="coat">
           </div>
@@ -30,7 +45,11 @@
             <label for="item2" class="select-size"></label>
             <label for="item3" class="select-size"></label>
           </div>
-          <a href="#" class="hero-button">Open Collection</a>
+          <div class="discount">
+            <span class="percent">40%</span>
+            <span class="off">OFF</span>
+            <p class="price">$299</p>
+          </div>
         </div>
         <div class="horizontal-menu">
           <ul>
