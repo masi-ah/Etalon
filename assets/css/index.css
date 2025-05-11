@@ -15,7 +15,7 @@ body, html {
   height: 3000px;
 }
 
-.container {
+.container-hero {
   width: var(--width);
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +23,7 @@ body, html {
   padding-right: 0;
 }
 
-.hero {
+#hero {
   width: var(--width);
   background: linear-gradient(to right,#2A4032 , #3A5E46);
   position: relative;
@@ -165,7 +165,7 @@ h2 {
   background-color: #FDDE67;
   position: sticky;
   z-index: 5;
-  margin: 20px auto;
+  margin: 0;
   
 }
 
@@ -186,6 +186,28 @@ h2 {
   width: 24px;
   height: 24px;
 }
+
+#brands{
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #181818;
+  justify-content: space-between;
+}
+
+#brands ul{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0  0;
+  margin: 0;
+}
+
+#brands li{
+  color: #FFFFFF;
+}
+
 
 @media (max-width: 999px) {
   body, .container {
@@ -210,14 +232,14 @@ h2 {
     padding: 0;
   }
 
- .container{
+ .container-hero{
    width: var(--width);
    max-width: 1320px;
    margin-left: auto;
    margin-right: auto;
  }
 
- .hero{
+ #hero{
   background: linear-gradient(to right,#2A4032 , #3A5E46);
  }
 
