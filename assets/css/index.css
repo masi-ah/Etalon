@@ -425,4 +425,33 @@ h2 {
   top: -66%;
   left: -50%;
 }
+
+
+#brands{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  padding:30px 30px;
+}
+
+#brands ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 80px;
+}
+
+#brands li{
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+#brand img{
+  object-fit: contain;
+}
 }
