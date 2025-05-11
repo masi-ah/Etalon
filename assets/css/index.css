@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   width: var(--width);
   max-width: var(--width);
   margin: 0;
@@ -202,10 +202,12 @@ h2 {
 
 
 @media (min-width:1000px) {
-  body{
+  body, html{
     width: var(--width);
-    max-width: 1540px;
-    margin: 0 auto;
+    /* max-width: 1540px; */
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
   }
 
  .container{
