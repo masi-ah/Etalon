@@ -367,6 +367,7 @@ h3{
 
 #best-sellers{
   background-color: #E9E9E9;
+  margin-bottom: -32px;
 }
 
 #best-sellers h3{
@@ -474,6 +475,64 @@ input[type="checkbox"]:checked + .heart {
   text-decoration: line-through;
   color: #00000033; 
 }
+
+#sale-and-soon{
+  background-color: #3B5F47;
+  margin: 0;
+  padding: 0;
+}
+
+#sale-and-soon ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.green{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FFFFFF ;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;;
+  line-height: 32px;
+  width: 54px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #18181840;
+}
+
+.title-soon{
+  font-family: var(--fontfamily);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.time{
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding-bottom: 22px;
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1289px) {
   body, .container {
