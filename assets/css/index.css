@@ -403,8 +403,8 @@ h3{
 
 .heart {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 12px;
   background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 width=%2224%22 height=%2224%22%3E%3Cpath fill=%22white%22 stroke=%22%23555%22 stroke-width=%222%22 d=%22M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z%22/%3E%3C/svg%3E');
   width: 24px;
   height: 24px;
@@ -451,7 +451,7 @@ input[type="checkbox"]:checked + .heart {
   flex-direction: column;
 }
 
-.price{
+.sellers-price{
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 300;
@@ -885,5 +885,123 @@ h3{
   text-decoration: none;
   white-space: nowrap;
   margin-bottom: 8px;
+}
+
+#best-sellers{
+  background-color: #E9E9E9;
+}
+
+#best-sellers h3{
+  padding: 32px 16px;
+  margin-bottom: -10px;
+  font-family: var(--fontfamily);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #000000;
+}
+
+#best-sellers ul{
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-around; */
+  padding: 16px;
+  list-style: none;
+  padding-top: 0;
+  margin-left: 50px;
+}
+
+#best-sellers li {
+}
+
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 303.75px;
+  height: 347px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.heart {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 width=%2224%22 height=%2224%22%3E%3Cpath fill=%22white%22 stroke=%22%23555%22 stroke-width=%222%22 d=%22M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z%22/%3E%3C/svg%3E');
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .heart {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 width=%2224%22 height=%2224%22%3E%3Cpath fill=%22red%22 stroke=%22red%22 stroke-width=%222%22 d=%22M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z%22/%3E%3C/svg%3E');
+  background-size: contain;
+}
+
+.box {
+  position: relative;
+}
+
+.sellers-img {
+  width: 100%;
+  transform: scale(0.7);
+}
+
+.sellers-info{
+  font-family: var(--fontfamily);
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sellers-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.sellers-price{
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 100%;
+  color:#00000099;
+}
+
+.icon {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+.price-row {
+  display: flex;
+  gap: 8px; 
+  align-items: center;
+}
+
+.sellers-off {
+  text-decoration: line-through;
+  color: #00000033; 
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 100%;
 }
 }
