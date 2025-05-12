@@ -214,7 +214,7 @@ h3{
   font-size: 32px;
   line-height: 32px;
   color: #000000;
-  padding-left: 15px;
+  margin-top: 0;
 }
 
 .jacket-collection{
@@ -224,7 +224,6 @@ h3{
   height: 410.9px;
   background-color: #C5C2CA;
   border-radius: 24px;
-  margin-left: 15px;
   position: relative;
 }
 
@@ -239,13 +238,12 @@ h3{
 }
 
 .img-wrapper{
-  width: 197.28;
-  height: 339.03;
+  width: 197.28px;
+  height: 339.03px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* background-color: #3A5E46; */
 }
 
 .img-wrapper img{
@@ -269,6 +267,20 @@ h3{
   text-decoration: none;
 }
 
+.collection-section {
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.collection-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .baner-sunglasses {
   display: flex;
   align-items: center;
@@ -276,88 +288,85 @@ h3{
   background-color: #FDDE67;
   border-radius: 24px;
   width: 330px;
-  height: 245.61px;
-  margin-top: 32px;
-  margin-left:15px;
+  height: 246.49px;
   position: relative;
+  /* padding: 16px; */
 }
 
-.baner-image{
+.baner-image {
   display: flex;
   width: 189.66px;
   height: 216.74px;
-  background-color: #3A5E46;
-  margin-top: 30px;
- flex-shrink: 0;
+  flex-shrink: 0;
+  align-items: flex-end;  
+  justify-content: center; 
+  /* background-color: rgb(255, 0, 0); */
+  margin-bottom: -9%;
+  overflow: hidden;
 }
 
 .baner-image img {
-  padding-left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  transform: scale(1.13) translateY(25px);
+  transform-origin: bottom;
 }
 
 .baner-text {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-between;
- flex: 1;
-}
-
-
-.baner-text h2 {
-  font-family: var(--fontfamily);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  color: #000000;
-  margin-top: -70;
-  margin-left: -25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+  padding-left: 12px;
+  position: relative;
 }
 
 .baner-text-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 30px;
 }
 
+.baner-text h2 {
+  font-family: var(--fontfamily);
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 17%;
+  margin-left: -35%;
+  color: #000000;
+}
+
 .baner-discount {
- display: flex;
- font-family: 'Roboto';
- font-size: 24px;
- font-weight: 700;
- line-height: 100%;
- padding-left: 5px;
- color:#000000 ;
- /* background-color: aqua; */
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #000000;
 }
 
 .baner-button {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: var(--fontfamily);
   font-size: 14px;
   font-weight: 400;
-  line-height: 100%;
   color: #FFFFFF;
   padding: 16px 40px;
   background-color: #181818;
   border-radius: 6px;
   text-decoration: none;
-  z-index: 2;
+  white-space: nowrap;
 }
 
 
-@media (max-width: 999px) {
+
+@media (max-width: 1289px) {
   body, .container {
     width: 360px;
     margin: 0 auto;
@@ -371,7 +380,7 @@ h3{
 
 
 
-@media (min-width:1000px) {
+@media (min-width:1290px) {
   body, html{
     width: var(--width);
     /* max-width: 1540px; */
@@ -602,5 +611,170 @@ h2 {
 
 #brand img{
   object-fit: contain;
+}
+
+
+h3{
+  font-family: var(--fontfamily);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #000000;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 50px;
+}
+
+.jacket-collection{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 550.75px;
+  background-color: #C5C2CA;
+  border-radius: 24px;
+  position: relative;
+}
+
+.title-collection{
+  font-family: var(--fontfamily);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000000;
+  padding:  0 18px;
+  margin-bottom: 1.5%;
+}
+
+.img-wrapper{
+  width: 278.66px;
+  height: 478.88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+  margin-bottom: 5px;
+}
+.img-wrapper img{
+  width: var(--width);
+  object-fit: contain;
+  transform: scaleX(-1);
+}
+
+.discover-button{
+  background-color: #181818;
+  font-family: var(--fontfamily);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+  position: absolute;
+  padding: 16px 40px;
+  border-radius: 6px;
+  top: 87%;
+  left: 62%;
+  text-decoration: none;
+}
+
+/* .collection-section {
+  padding: 70px;
+  margin-top: 0px;
+} */
+
+.collection-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin-top: 32px;
+  gap: 20px;
+}
+
+.baner-sunglasses {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FDDE67;
+  border-radius: 24px;
+  width: 740px;
+  height: 550.75px;
+  overflow: hidden;
+  /* padding: 16px; */
+}
+
+.baner-image {
+  display: flex;
+  width: 455.14px;
+  height: 520.12px;
+  flex-shrink: 0;
+  align-items: flex-end;  
+  justify-content: center; 
+  /* background-color: rgb(255, 0, 0); */
+  margin-bottom: -9%;
+}
+
+.baner-image img {
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  transform: scale(1.1) translateY(45px);
+  transform-origin: bottom;
+  /* background-color: #3A5E46; */
+}
+
+.baner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  flex: 1;
+  padding-left: 12px;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.baner-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  /* background-color: rebeccapurple; */
+  margin-bottom: 10px;
+}
+
+.baner-title{
+  font-family: var(--fontfamily);
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #000000;
+  margin-left: -10%;
+  margin-top: 35%;
+  padding-right: 88px;
+}
+
+.baner-discount {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 700;
+  /* line-height: 100%; */
+  color: #000000;
+  margin-left: -15px;
+}
+
+.baner-button { 
+  font-family: var(--fontfamily);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 16px 40px;
+  background-color: #181818;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-bottom: 8px;
 }
 }
