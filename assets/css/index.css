@@ -12,15 +12,8 @@ body, html {
   max-width: var(--width);
   margin: 0;
   padding: 0;
+  padding-top: 20px ;
   /* height: 3000px; */
-}
-
-.container-hero, .container-collection{
-  width: var(--width);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 #hero {
@@ -164,9 +157,10 @@ h2 {
   width: var(--width);
   background-color: #FDDE67;
   position: sticky;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  z-index: 20;
   margin: 0;
-  
 }
 
 .horizontal-menu ul {
@@ -215,7 +209,7 @@ h3{
   line-height: 32px;
   color: #000000;
   margin-top: 30px;
-  padding-left: 16px;
+  padding-left: 38px;
 }
 
 .jacket-collection{
@@ -226,7 +220,7 @@ h3{
   background-color: #C5C2CA;
   border-radius: 24px;
   position: relative;
-  margin-left: 16px;
+margin: 0 auto;
 }
 
 .title-collection{
@@ -292,7 +286,7 @@ h3{
   width: 330px;
   height: 246.49px;
   position: relative;
-  margin-left: 16px;
+  margin: 0 auto;
 }
 
 .baner-image {
@@ -374,7 +368,7 @@ h3{
 }
 
 #best-sellers h3{
-  padding: 32px 16px;
+  padding: 32px 40px;
   margin-bottom: -10px;
 }
 
@@ -384,7 +378,7 @@ h3{
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   gap: 32px;
-  padding: 16px;
+  padding: 16px 40px;
   list-style: none;
   padding-top: 0;
 }
@@ -530,15 +524,17 @@ input[type="checkbox"]:checked + .heart {
   font-weight: 300;
   line-height: 100%;
   color: #FFFFFF;
-  padding-bottom: 22px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 1289px) {
-  body, .container {
-    width: 360px;
-    margin: 0 auto;
+  body, html {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
-
+  
   .desktop-header{
     display: none;
   }
@@ -552,6 +548,9 @@ input[type="checkbox"]:checked + .heart {
   }
 
   .row-left{
+    display: none;
+  }
+  .more{
     display: none;
   }
 }
@@ -803,7 +802,7 @@ h3{
   color: #000000;
   margin-top: 2%;
   margin-bottom: 5%;
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .jacket-collection{
@@ -965,7 +964,7 @@ h3{
 
 #best-sellers h3{
   padding: 32px 16px;
-  margin-left: 10%; 
+  margin-left: 7%; 
   margin-right: 0; 
   font-family: var(--fontfamily);
   font-size: 48px;
@@ -981,12 +980,16 @@ h3{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
+  gap: 35px;
+  justify-content: center;
 }
 
 .best-sellers li {
   flex: 1 1 calc(25% - 20px);
   box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box{
